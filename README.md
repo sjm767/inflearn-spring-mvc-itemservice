@@ -1,4 +1,4 @@
-# inflearn-spring-mvc-lec-one-second
+# inflearn-spring-mvc-itemservice
 
 - 강의명: 스프링 MVC 1편
 - 강사: 김영한님
