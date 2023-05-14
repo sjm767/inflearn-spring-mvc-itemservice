@@ -1,10 +1,10 @@
 package com.jaeshim.inflearn.spring.mvc.itemservice.domain;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
+import com.jaeshim.inflearn.spring.mvc.itemservice.domain.item.Item;
+import com.jaeshim.inflearn.spring.mvc.itemservice.domain.item.ItemRepository;
 import java.util.List;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 

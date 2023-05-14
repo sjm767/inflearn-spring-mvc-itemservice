@@ -1,9 +1,8 @@
 package com.jaeshim.inflearn.spring.mvc.itemservice.web.basic;
 
-import com.jaeshim.inflearn.spring.mvc.itemservice.domain.Item;
-import com.jaeshim.inflearn.spring.mvc.itemservice.domain.ItemRepository;
+import com.jaeshim.inflearn.spring.mvc.itemservice.domain.item.Item;
+import com.jaeshim.inflearn.spring.mvc.itemservice.domain.item.ItemRepository;
 import java.util.List;
-import javax.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -103,14 +102,5 @@ public class BasicItemController {
   public String edit(@PathVariable Long itemId, @ModelAttribute Item item) {
     itemRepository.update(itemId, item);
     return "redirect:/basic/items/{itemId}";
-  }
-
-  /**
-   * 테스트용 데이터 추가
-   */
-  @PostConstruct
-  public void init() {
-    itemRepository.save(new Item("itemA", 10000, 10));
-    itemRepository.save(new Item("itemB", 20000, 20));
   }
 }

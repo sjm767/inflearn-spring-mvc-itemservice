@@ -1,4 +1,4 @@
-package com.jaeshim.inflearn.spring.mvc.itemservice.domain;
+package com.jaeshim.inflearn.spring.mvc.itemservice.domain.item;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,7 +32,10 @@ public class ItemRepository {
     findItem.setItemName(itemParam.getItemName());
     findItem.setPrice(itemParam.getPrice());
     findItem.setQuantity(itemParam.getQuantity());
-
+    findItem.setOpen(itemParam.getOpen());
+    findItem.setRegions(itemParam.getRegions());
+    findItem.setItemType(itemParam.getItemType());
+    findItem.setDeliveryCode(itemParam.getDeliveryCode());
   }
 
   public void clearStore() {
